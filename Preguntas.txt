@@ -1,0 +1,12 @@
+1.-¿Explica dos diferencias entre una API REST y un servidor GraphQL? La API REST expone los múltiples endpoints que se crean por la cantidad de recursos que existan, mientras que en Graph solo se expone uno al que se le envían todas las consultas. Y en REST el servidor decide que campos devuelve cada endpoint, lo que puede causar un over-fetching en cambio en Graph es mas exacta la consulta para que al final solo le de una petición.
+
+2.-Indica una situación en la que conviene usar REST y otra en la que conviene usar GraphQL
+Tenemos el ejemplo proporcionado en el examen, es mas fácil crear, listar, actualizar y eliminar registros de una sola tabla cada operación tiene su respectivo apartado, es mas para cosas como aprendizaje menor, tareas cortas o los datos son simples. En cambio si fuera ya algo mas grande como un app móvil o una web es preferible usar GraphQL por que lo mismo pero campos distintos los cuales son de mas utilidad en tarea mas grande, variadas y relacionadas.
+
+3.-Que diferencia hay entre una imagen y un contenedor? ¿Qué papel cumple el Dockerfile en esa relación? Una imagen solo es la plantilla de una lectura que esta  en el sistema base, con sus dependencias, códigos y configuraciones que sirven para ejecutar, mientras que un contenedor es una instancia en ejecución de esa imagen, se pueden levantar varios contenedores de una sola imagen. 
+Y el archivo Dockerfile funciona como archivo de testo en el cual están las instrucciones que se siguen para construir y levantar la imagen.
+
+4.-Para que sirve el Docker Compose? En el mape 8000: 8000, ¿Qué representa el primer 8000 y que representa el segundo? Sirve para que se pueda permitir esa ejecución de las aplicaciones pero con varios contenedores en un solo archivo, crea las redes, volúmenes y contenedores que levanta y configura.
+El primer puerto de la maquina es la anfitriona que  es el host, con el cual se puede acceder al navegador y visualizarlo y el segundo es el puerto dentro del contenedor
+
+5.-¿Por qué las laptops del ejercicio 1 se guardan en MySQL y no en una lista de Python? ¿Qué identifica la llave primaria id? Se guardan en cosas importantes como, la persistencia, Comparación y concurrencia, consultas, etc. La llave primaria indica de forma unica e irrepetible cada registro de la tabla donde su lugar único, lo que ayuda a localizar, actualizar o eliminar algo con mas precisión y organización.
